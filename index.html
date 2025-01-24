@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso Gratuito - Velas Rosas 10x</title>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      const pixelId = getQueryParam('pix');
+
+      if (!pixelId) {
+        console.error('Pixel ID is missing or invalid in URL parameters.');
+        return;
+      }
+
+      !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+      fbq('init', pixelId);
+      fbq('track', 'PageView'); 
+
+      // Добавляем обработчики для кнопок
+      document.querySelectorAll('.button__redirect').forEach(function (button) {
+        button.addEventListener('click', function () {
+          if (pixelId) {
+            fbq('track', 'Lead'); // Отправляем событие 'Lead' при клике
+          } else {
+            console.warn('Pixel ID is missing. Lead event not tracked.');
+          }
+        });
+      });
+    });
+
+
+  </script>
+
+
+
+
+</head>
+
+<body style="
+font-family: 'Poppins', sans-serif; 
+margin: 0; 
+box-sizing: border-box;  
+background: black; 
+display: flex; 
+flex-direction: column; 
+align-items: center; 
+justify-content: center;
+overflow-x: hidden;
+">
+
+  <header style="display: flex; flex-direction: column; align-items: center; width: 97%;">
+    <div style="
+      width: 100%;
+      height: 50px;
+      background: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+    ">
+
+
+      <style>
+        @keyframes pulsar {
+          0% {
+            transform: scale(1);
+          }
+
+          50% {
+            transform: scale(1.2);
+          }
+
+          100% {
+            transform: scale(1);
+          }
+        }
+
+        .pulsar-element {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          width: 330px;
+          height: 50px;
+          background-color: #29FF00;
+          color: white;
+          text-decoration: none;
+          font-size: large;
+          font-weight: 900;
+          border-radius: 12px;
+          animation: pulsar 2s ease-in-out infinite;
+        }
+
+        .pulsar-element:hover {
+          background: #35d116;
+        }
+
+        .div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .wrap {
+          padding: 0;
+          display: flex;
+          gap: 5px;
+          flex-direction: row;
+          margin-bottom: 10px;
+          margin-top: 10px;
+        }
+
+        .video-container {
+          width: 100%;
+          border: 2px solid red;
+        }
+
+        header {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          padding: 10px;
+        }
+
+        .logo {
+          width: 100%;
+          max-width: 250px;
+        }
+
+        .pulsar-element {
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      </style>
+
+
+      <p style="color: white; font-weight: 900; font-size: 16px;">Acesso se encerrando! Aproveite</p>
+
+      <a href="https://api.whatsapp.com/send/?phone=6281214698631&text=হ্যালো!%20আমি%20ভিআইপি%20গ্রুপে%20প্রবেশাধিকার%20পেতে%20চাই%20।"
+        target="_blank" style="color: white; font-weight: 700; font-size: 15px;" id="whatsappLink"
+        class="button__redirect">
+        Agora!
+      </a>
+
+
+
+    </div>
+    <div style="margin: 30px;">
+      <img style="width: 100px;" src="/img/logo-black-tipster.png" alt="logo">
+    </div>
+  </header>
+
+  <section style="margin: 15px; margin-top: -30px;">
+    <div class="div">
+      <!--
+            <h3 style="color: white; font-weight: 700; font-size: 15px;">ACESSE AS ESTRATÉGIAS QUE ME FAZ FATURAR</h2>
+            <h1 style="color: white; margin-top: -5px; font-size: 40px; font-weight: 900;"><span style="color: red; font-weight: 900;">R$1000</span> POR DIA</h1>
+            <h2 style="color: white; margin-top: -30px; font-weight: 700; font-size: 18px; ">APERTANDO APENAS 2 BOTÕES</h2>
+            <P style="color: white; margin-top: -10PX; font-size: 12px;">Você vai apenas precisar de um celular e mais nada</P>
+            -->
+    </div>
+    <div class="container">
+
+
+      <img src="https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/2024/03/05/65e77635d267b30001fa4b9e.png"
+        style="background-color: transparent;max-width: 100%; display: flex; justify-content: center; margin-bottom: 40px;"
+        id="vturb-headline-image">
+
+      <div class="container-img" style="position: relative;">
+
+
+        <video id="myVideo" controls autoplay muted width="100%" height="auto" class="hidden-controls">
+
+        </video>
+        <div id="timeline" class="timeline">
+          <div id="loadProgress" class="load-progress"></div>
+        </div>
+        <div class="smartplayer-autoplay-element-animated"
+          style="display: flex; justify-content: center; position: absolute; top: -10%; left: -10%; ">
+
+
+          <div id="smart_autoplay_element_65e6952c24757e000856561b_0"
+            class="smartplayer-autoplay-box-element smartplayer-smart-element smartplayer-autoplay-element"
+            style="position: absolute; left: 352px; top: 197.333px; z-index: 1; width: 576px; height: 325.333px; rotate: 0deg; border-width: 2.66667px; border-color: rgb(255, 255, 255); border-radius: 10.6667px; border-style: solid; background-color: rgba(255, 0, 18, 0.75); opacity: 1; scale: 1;">
+          </div>
+
+
+
+          <span id="smart_autoplay_element_65e6952c24757e000856561b_1"
+            class=" span-1 smartplayer-autoplay-text-element smartplayer-smart-element smartplayer-autoplay-element"
+            style="display: block; left: 352px; top: 228.444px; position: absolute; z-index: 2; width: 576px; height: 56px; rotate: 0deg; font-size: 35.5556px; color: rgb(255, 255, 255); text-align: center; font-weight: 700; opacity: 1; scale: 1.3;">Seu
+            vídeo já começou</span>
+
+
+
+
+
+
+
+          <span id="smart_autoplay_element_65e6952c24757e000856561b_2"
+            class="span-2 smartplayer-autoplay-text-element smartplayer-smart-element smartplayer-autoplay-element"
+            style="display: block; left: 352px; top: 464.444px; position: absolute; z-index: 3; width: 576px; height: 56px; rotate: 0deg; font-size: 35.5556px; color: rgb(255, 255, 255); text-align: center; font-weight: 700; opacity: 1; scale: 1.3;">Clique
+            para ouvir</span>
+
+
+
+
+
+          <img id="smart_autoplay_element_65e6952c24757e000856561b_3" alt="Seu vídeo já começou"
+            src="data:image/svg+xml;base64,CiAgICA8c3ZnIHZlcnNpb249IjEuMSIgZmlsbD0iI0ZGRkZGRiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKICAgICAgICB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjQ2Ljc1cHgiIGhlaWdodD0iMzIuNTYzcHgiIHZpZXdCb3g9IjcuOTk5IDkuMDYyIDQ2Ljc1IDMyLjU2MyIKICAgICAgICBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDcuOTk5IDkuMDYyIDQ2Ljc1IDMyLjU2MyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgID4KICAgICAgPHN0eWxlPgogICAgICAgIEAtd2Via2l0LWtleWZyYW1lcyBCTElOSyB7CiAgICAgICAgICAwJSB7IG9wYWNpdHk6IDA7IH0KICAgICAgICAgIDMzJSB7IG9wYWNpdHk6IDE7IH0KICAgICAgICAgIDY2JSB7IG9wYWNpdHk6IDE7IH0KICAgICAgICAgIDEwMCUgeyBvcGFjaXR5OiAwOyB9CiAgICAgICAgfQoKICAgICAgICBAa2V5ZnJhbWVzIEJMSU5LIHsKICAgICAgICAgIDAlIHsgb3BhY2l0eTogMDsgfQogICAgICAgICAgMzMlIHsgb3BhY2l0eTogMTsgfQogICAgICAgICAgNjYlIHsgb3BhY2l0eTogMTsgfQogICAgICAgICAgMTAwJSB7IG9wYWNpdHk6IDA7IH0KICAgICAgICB9CgogICAgICAgIC5hbmltYXRpb24gLmJsaW5rXzEgewogICAgICAgICAgLXdlYmtpdC1hbmltYXRpb246IEJMSU5LIDJzIGluZmluaXRlOwogICAgICAgICAgYW5pbWF0aW9uOiBCTElOSyAycyBpbmZpbml0ZTsKICAgICAgICAgIG9wYWNpdHk6IDA7CiAgICAgICAgfQoKICAgICAgICAuYW5pbWF0aW9uIC5ibGlua18yIHsKICAgICAgICAgIC13ZWJraXQtYW5pbWF0aW9uOiBCTElOSyAycyBpbmZpbml0ZSAuM3M7CiAgICAgICAgICBhbmltYXRpb246IEJMSU5LIDJzIGluZmluaXRlIC4zczsKICAgICAgICAgIG9wYWNpdHk6IDA7CiAgICAgICAgfQoKICAgICAgICAuYW5pbWF0aW9uIC5ibGlua18zIHsKICAgICAgICAgIC13ZWJraXQtYW5pbWF0aW9uOiBCTElOSyAycyBpbmZpbml0ZSAuNnM7CiAgICAgICAgICBhbmltYXRpb246IEJMSU5LIDJzIGluZmluaXRlIC42czsKICAgICAgICAgIG9wYWNpdHk6IDA7CiAgICAgICAgfQoKICAgICAgICAuYW5pbWF0aW9uIC5zbWFydHBsYXktc3ZnLWNvbG9yIHsKICAgICAgICAgIGZpbGw6ICcjRkZGRkZGJyAhaW1wb3J0YW50OwogICAgICAgIH0KCiAgICAgICAgLmFuaW1hdGlvbi5hZGp1c3RhYmxlIHsKICAgICAgICAgIGJvcmRlcjogNHB4IHNvbGlkICcjRkZGRkZGJzsKICAgICAgICB9CiAgICAgIDwvc3R5bGU+CgogICAgICA8ZyBjbGFzcz0iYWRqdXN0YWJsZSBmZyBhbmltYXRpb24iPgogICAgICAgIDxwYXRoIGNsYXNzPSJzbWFydHBsYXktc3ZnLWNvbG9yIiBkPSJNNTMuMjQ5LDM5LjYxNmMtMC4xODYsMC0wLjM3MS0wLjA1MS0wLjUzNy0wLjE1N2wtNDMuNS0yNy43NWMtMC40NjYtMC4yOTctMC42MDMtMC45MTYtMC4zMDYtMS4zODFjMC4yOTgtMC40NjYsMC45MTctMC42MDEsMS4zODEtMC4zMDZsNDMuNSwyNy43NWMwLjQ2NywwLjI5NywwLjYwNCwwLjkxNiwwLjMwNywxLjM4MUM1My45MDEsMzkuNDUzLDUzLjU3OSwzOS42MTYsNTMuMjQ5LDM5LjYxNnoiPjwvcGF0aD4KICAgICAgICA8cGF0aCBjbGFzcz0iYmxpbmtfMyBzbWFydHBsYXktc3ZnLWNvbG9yIiBkPSJNNDguODk2LDMzLjQ2N2wxLjY5OSwxLjA4NWMzLjQ5Ny03Ljc5MSwyLjA3My0xNy4yNzEtNC4zMTMtMjMuNjU5Yy0wLjM5MS0wLjM5MS0xLjAyMy0wLjM5MS0xLjQxNCwwcy0wLjM5MSwxLjAyMywwLDEuNDE0QzUwLjU4MSwxOC4wMTksNTEuOTEzLDI2LjQ2Myw0OC44OTYsMzMuNDY3eiI+PC9wYXRoPgogICAgICAgIDxwYXRoIGNsYXNzPSJibGlua18zIHNtYXJ0cGxheS1zdmctY29sb3IiIGQ9Ik00Ni45MjYsMzYuOTU2Yy0wLjYxMiwwLjg2My0xLjI4NiwxLjY5NS0yLjA1OSwyLjQ2OWMtMC4zOTIsMC4zOTEtMC4zOTIsMS4wMjMsMCwxLjQxNGMwLjE5NCwwLjE5NSwwLjQ1LDAuMjkzLDAuNzA3LDAuMjkzYzAuMjU2LDAsMC41MTItMC4wOTgsMC43MDYtMC4yOTNjMC44NzgtMC44NzgsMS42NDItMS44MjQsMi4zMzMtMi44MDdMNDYuOTI2LDM2Ljk1NnoiPjwvcGF0aD4KICAgICAgICA8cGF0aCBjbGFzcz0iYmxpbmtfMiBzbWFydHBsYXktc3ZnLWNvbG9yIiBkPSJNNDIuNTQzLDI5LjQxNWwxLjc3NywxLjEzNWMxLjU0NS01LjMxNSwwLjIyOS0xMS4yOTMtMy45NTMtMTUuNDc2Yy0wLjM5Mi0wLjM5MS0xLjAyMy0wLjM5MS0xLjQxNCwwYy0wLjM5MiwwLjM5MS0wLjM5MiwxLjAyMywwLDEuNDE0QzQyLjQ1NCwxOS45ODcsNDMuNjM5LDI0LjkyNSw0Mi41NDMsMjkuNDE1eiI+PC9wYXRoPgogICAgICAgIDxwYXRoIGNsYXNzPSJibGlua18yIHNtYXJ0cGxheS1zdmctY29sb3IiIGQ9Ik00MSwzMy4xNzRjLTAuNTYzLDAuOTQtMS4yMzUsMS44MzctMi4wNDcsMi42NDZjLTAuMzkxLDAuMzkyLTAuMzkxLDEuMDIzLDAsMS40MTRjMC4xOTUsMC4xOTUsMC40NTEsMC4yOTMsMC43MDcsMC4yOTNzMC41MTItMC4wOTgsMC43MDctMC4yOTNjMC45MTYtMC45MTQsMS42NzYtMS45MjQsMi4zMTctMi45ODRMNDEsMzMuMTc0eiI+PC9wYXRoPgogICAgICAgIDxwYXRoIGNsYXNzPSJibGlua18xIHNtYXJ0cGxheS1zdmctY29sb3IiIGQ9Ik0zNS43NzEsMjUuMDk0bDIuMDAzLDEuMjc3YzAuMDEyLTAuMjAzLDAuMDI5LTAuNDA0LDAuMDI5LTAuNjA5YzAtMy4wNzktMS4yLTUuOTc0LTMuMzgxLTguMTUzYy0wLjM5MS0wLjM5MS0xLjAyMi0wLjM5MS0xLjQxNCwwYy0wLjM5MSwwLjM5MS0wLjM5MSwxLjAyMywwLDEuNDE0QzM0LjY1MiwyMC42NjYsMzUuNjEzLDIyLjgwMiwzNS43NzEsMjUuMDk0eiI+PC9wYXRoPgogICAgICAgIDxwYXRoIGNsYXNzPSJibGlua18xIHNtYXJ0cGxheS1zdmctY29sb3IiIGQ9Ik0zNS4wODQsMjkuNDAxYy0wLjQ3NCwxLjE0NS0xLjE3MiwyLjE5Ny0yLjA3NiwzLjFjLTAuMzkxLDAuMzkxLTAuMzkxLDEuMDIzLDAsMS40MTRjMC4xOTUsMC4xOTUsMC40NTEsMC4yOTMsMC43MDcsMC4yOTNjMC4yNTcsMCwwLjUxMy0wLjA5OCwwLjcwNy0wLjI5M2MxLjAwOC0xLjAwNiwxLjc5NS0yLjE3LDIuMzYxLTMuNDNMMzUuMDg0LDI5LjQwMXoiPjwvcGF0aD4KICAgICAgICA8cG9seWdvbiBjbGFzcz0ic21hcnRwbGF5LXN2Zy1jb2xvciIgcG9pbnRzPSIyOC4xMjQsMjAuMjE1IDI4LjEyNCwxNC45OTEgMjQuNjM1LDE3Ljk5ICAiPjwvcG9seWdvbj4KICAgICAgICA8cGF0aCBjbGFzcz0ic21hcnRwbGF5LXN2Zy1jb2xvciIgZD0iTTIwLjkyMSwyMC4zNjZoLTYuNDIzYy0wLjU1MywwLTEsMC41MDgtMSwxLjEzNXY4LjIyOWMwLDAuNjI3LDAuNDQ3LDEuMTM1LDEsMS4xMzVoNy4zNzVsNi4yNSw1Ljg3NVYyNC45NkwyMC45MjEsMjAuMzY2eiI+PC9wYXRoPgogICAgICA8L2c+CiAgICA8L3N2Zz4KICA="
+            class="smartplayer-autoplay-img-element smartplayer-smart-element smartplayer-autoplay-element"
+            style="position: absolute; left: 549.333px; top: 303.111px; z-index: 4; width: 181.333px; height: 128px; rotate: 0deg; opacity: 1; scale: 1.3;">
+
+
+        </div>
+
+      </div>
+
+      <style>
+        .ocultar {
+          display: none;
+        }
+
+        style.display .ocultar.active {
+          display: block;
+          background-color: rgba(0, 0, 0, 0.7);
+          color: white;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .ocultar.active {
+          display: block;
+        }
+      </style>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const video = document.getElementById('myVideo');
+          const ocultarBlock = document.querySelector('.ocultar');
+          const triggerTime = 5 * 60 + 25;
+          let classAdded = false;
+
+          video.addEventListener('timeupdate', function () {
+            if (!classAdded && video.currentTime >= triggerTime) {
+              ocultarBlock.classList.add('active');
+              classAdded = true;
+            }
+          });
+
+          const videoplay = document.querySelector('.container-img');
+          const smartAutoplayElement = document.querySelector('.smartplayer-autoplay-element-animated');
+
+
+          videoplay.addEventListener('click', function () {
+
+            smartAutoplayElement.style.display = 'none';
+            video.muted = false;
+            video.play();
+          });
+        });
+      </script>
+
+
+      <style>
+        .container-img {
+          z-index: 999999;
+          cursor: pointer;
+        }
+
+        #myVideo {
+          position: relative;
+        }
+
+        .timeline {
+          width: 100%;
+          height: 8px;
+          background-color: transparent;
+          position: absolute;
+          bottom: 8px;
+          left: 0;
+        }
+
+        .load-progress {
+          width: 0%;
+          height: 100%;
+          background-color: #21b40d;
+          transition: width 0.5s linear;
+        }
+
+        video {
+          cursor: pointer;
+        }
+
+
+        video::-webkit-media-controls-timeline {
+          display: none;
+        }
+
+        video::-moz-media-controls-timeline {
+          display: none;
+        }
+
+        video::-ms-media-controls-timeline {
+          display: none;
+        }
+
+        #myVideo::-webkit-media-controls {
+          opacity: 0;
+          pointer-events: none;
+
+        }
+
+        #myVideo::-moz-media-controls {
+          opacity: 0;
+          pointer-events: none;
+        }
+
+        #myVideo::-ms-media-controls {
+          opacity: 0;
+          pointer-events: none;
+        }
+
+
+        #myVideo:hover::-webkit-media-controls {
+          opacity: 0.01;
+          pointer-events: auto;
+
+        }
+
+        #myVideo:hover::-moz-media-controls {
+          opacity: 0.01;
+          pointer-events: auto;
+        }
+
+        #myVideo:hover::-ms-media-controls {
+          opacity: 0.01;
+          pointer-events: auto;
+        }
+      </style>
+
+      <script>
+
+        const videoMain = document.getElementById("myVideo");
+        const timeline = document.getElementById("timeline");
+        const loadProgress = document.getElementById("loadProgress");
+
+        videoMain.addEventListener("timeupdate", function () {
+          const currentTime = video.currentTime;
+          const duration = videoMain.duration;
+          const progress = currentTime / duration;
+
+
+          const adjustedProgress = Math.pow(progress, 0.3);
+
+          loadProgress.style.width = (adjustedProgress * 100) + "%";
+        });
+
+
+
+        videoMain.addEventListener('play', function () {
+          setTimeout(function () {
+            video.removeAttribute('controls');
+          }, 200);
+        });
+      </script>
+
+      <script src="https://cdn.jsdelivr.net/npm/hls.js@1.1.5/dist/hls.min.js"></script>
+
+
+      <img style="width: 150px;margin:70px 50px 30px 50px;" src="https://euleolahan.com.br/vsl2/+18%20cod.png"
+        alt="logo">
+
+      <section class="ocultar">
+        <div class="div">
+          <h3 style="color: #29FF00; font-size: 15px; ">CLIQUE ABAIXO PARA TER ACESSO AOS GRUPOS</h3>
+        </div>
+        <div class="div">
+          <a href="https://api.whatsapp.com/send/?phone=6281214698631&text=হ্যালো!%20আমি%20ভিআইপি%20গ্রুপে%20প্রবেশাধিকার%20পেতে%20চাই%20।"
+            id="whatsappLink2" target="_blank" class="pulsar-element button__redirect" style="border: 2px solid #000;
+          padding: 2px 6px;">QUERO OS ACESSOS AGORA</a>
+        </div>
+
+        <div class="div" style="margin-top: 30px;">
+          <h2 style="color: red; font-size: 18px; font-weight: 900;">MAIS DE MEIO MILHÃO FATURADOS</h2>
+          <h2 style="color: white; font-size: 18px; font-weight: 900; margin-top: -10px; margin-bottom: 40px;">PELOS
+            ALUNOS BLACK TIPSTER</h2>
+        </div>
+
+        <div class="wrap">
+
+          <div id="smartplayer-1" style="width: 100%; height: 100%; border: 2px solid red;"></div>
+          <div id="smartplayer-2" style="width: 100%; height: 100%;border: 2px solid red;"></div>
+
+
+        </div>
+        <div id="smartplayer-3" style="width: 100%; height: 100%;border: 2px solid red;"></div>
+
+        <div style="margin: 50px;">
+          <img style="width: 200px;" src="/img/+18 cod.png" alt="logo">
+        </div>
+
+      </section>
+    </div>
+
+    <script>
+
+      if (Hls.isSupported()) {
+        var video = document.getElementById('myVideo');
+        var hls = new Hls();
+
+
+        hls.loadSource('https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/65e6951304efac000832b15d/original_360p.m3u8');
+        hls.attachMedia(video);
+
+
+        hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
+          console.log(data);
+        });
+
+        hls.on(Hls.Events.ERROR, function (event, data) {
+          if (data.fatal) {
+            switch (data.fatal) {
+              case Hls.ErrorTypes.NETWORK_ERROR:
+                console.error('err');
+                break;
+              case Hls.ErrorTypes.MEDIA_ERROR:
+                console.error('err rec');
+                break;
+              case Hls.ErrorTypes.OTHER_ERROR:
+                console.error('err other');
+                break;
+              default:
+                break;
+            }
+          }
+        });
+      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+
+        video.src = 'https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/65e6951304efac000832b15d/original_360p.m3u8';
+      } else {
+        console.error('err hls');
+
+
+
+
+      }
+    </script>
+
+
+    <style>
+      .container {
+        max-width: 1100px;
+      }
+
+      @media screen and (max-width:1150px) {
+        .container {
+          max-width: 760px;
+        }
+
+
+        .smartplayer-autoplay-element-animated div {
+          width: 100% !important;
+          height: 500px !important;
+          transform: scale(0.6);
+          top: 117px !important;
+          left: 350px !important;
+
+        }
+
+        .smartplayer-autoplay-element-animated span {
+          transform: scale(0.6) !important;
+        }
+
+        .smartplayer-autoplay-element-animated img {
+          transform: scale(0.5) !important;
+        }
+
+        .smartplayer-autoplay-element-animated {
+          width: 570px !important;
+          height: 340px !important;
+          top: -140px !important;
+          left: -250px !important;
+        }
+      }
+
+
+      @media screen and (max-width:795px) {
+        .container {
+          max-width: 660px;
+        }
+
+
+        .smartplayer-autoplay-element-animated div {
+          width: 100% !important;
+          height: 420px !important;
+          transform: scale(0.6);
+          top: 92px !important;
+          left: 300px !important;
+
+        }
+
+        .smartplayer-autoplay-element-animated span {
+          transform: scale(0.6) !important;
+          height: 20px !important;
+        }
+
+        .smartplayer-autoplay-element-animated .span-1 {
+          top: 180px !important;
+          left: 300px !important;
+        }
+
+        .smartplayer-autoplay-element-animated .span-2 {
+          top: 390px !important;
+          left: 300px !important;
+        }
+
+        .smartplayer-autoplay-element-animated img {
+          transform: scale(0.5) !important;
+          height: 100px !important;
+          left: 500px !important;
+          top: 250px !important;
+        }
+
+        .smartplayer-autoplay-element-animated {
+          width: 570px !important;
+          height: 340px !important;
+          top: -140px !important;
+          left: -250px !important;
+        }
+      }
+
+
+      @media screen and (max-width:675px) {
+        .container {
+          max-width: 660px;
+        }
+
+
+        .smartplayer-autoplay-element-animated div {
+          width: 100% !important;
+          height: 340px !important;
+          transform: scale(0.6);
+          top: 92px !important;
+          left: 240px !important;
+
+        }
+
+        .smartplayer-autoplay-element-animated span {
+          transform: scale(0.6) !important;
+          height: 20px !important;
+        }
+
+        .smartplayer-autoplay-element-animated .span-1 {
+          top: 180px !important;
+          left: 240px !important;
+          font-size: 30px !important;
+          width: 100% !important;
+        }
+
+        .smartplayer-autoplay-element-animated .span-2 {
+          top: 320px !important;
+          left: 240px !important;
+          font-size: 30px !important;
+          width: 100% !important;
+        }
+
+        .smartplayer-autoplay-element-animated img {
+          transform: scale(0.5) !important;
+          height: 100px !important;
+          left: 440px !important;
+          top: 215px !important;
+        }
+
+        .smartplayer-autoplay-element-animated {
+          width: 570px !important;
+          height: 340px !important;
+          top: -140px !important;
+          left: -250px !important;
+        }
+      }
+
+      @media screen and (max-width:530px) {
+        .container {
+          max-width: 4000px;
+        }
+
+        .smartplayer-autoplay-element-animated {
+          width: 570px !important;
+          height: 340px !important;
+          top: -120px !important;
+          left: -200px !important;
+        }
+
+        .smartplayer-autoplay-element-animated div {
+          width: 300px !important;
+          height: 230px !important;
+          transform: scale(0.6) !important;
+          top: 100px !important;
+          left: 270px !important;
+
+        }
+
+        .smartplayer-autoplay-element-animated span {
+          transform: scale(1) !important;
+          height: 20px !important;
+          scale: 0.6 !important;
+        }
+
+        .smartplayer-autoplay-element-animated .span-1 {
+          top: 160px !important;
+          left: 136px !important;
+          font-size: 19px !important;
+          width: 100% !important;
+        }
+
+        .smartplayer-autoplay-element-animated .span-2 {
+          top: 255px !important;
+          left: 133px !important;
+          font-size: 19px !important;
+          width: 100% !important;
+        }
+
+        .smartplayer-autoplay-element-animated img {
+          transform: scale(0.4) !important;
+          height: 100px !important;
+          left: 340px !important;
+          top: 171px !important;
+        }
+      }
+
+
+      @media screen and (max-width:430px) {
+        .container {
+          max-width: 480px;
+        }
+
+
+        .smartplayer-autoplay-element-animated div {
+          width: 300px !important;
+          height: 230px !important;
+          transform: scale(0.6) !important;
+          top: 100px !important;
+          left: 270px !important;
+
+        }
+
+        .smartplayer-autoplay-element-animated span {
+          transform: scale(1) !important;
+          height: 20px !important;
+          scale: 0.6 !important;
+        }
+
+        .smartplayer-autoplay-element-animated .span-1 {
+          top: 160px !important;
+          left: 136px !important;
+          font-size: 19px !important;
+          width: 100% !important;
+        }
+
+        .smartplayer-autoplay-element-animated .span-2 {
+          top: 255px !important;
+          left: 133px !important;
+          font-size: 19px !important;
+          width: 100% !important;
+        }
+
+        .smartplayer-autoplay-element-animated img {
+          transform: scale(0.4) !important;
+          height: 100px !important;
+          left: 340px !important;
+          top: 171px !important;
+        }
+
+        .smartplayer-autoplay-element-animated {
+          width: 570px !important;
+          height: 340px !important;
+          top: -140px !important;
+          left: -250px !important;
+        }
+
+        .pulsar-element {
+          width: 240px;
+        }
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var videoUrl = "https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/65e6952c0fa099000842361a/original_360p.m3u8";
+        var playerContainer = document.getElementById("smartplayer-1");
+
+
+        var video = document.createElement("video");
+        video.style.width = "100%";
+        video.style.height = "100%";
+        video.controls = true;
+        playerContainer.appendChild(video);
+
+
+        if (Hls.isSupported()) {
+          var hls = new Hls();
+          hls.loadSource(videoUrl);
+          hls.attachMedia(video);
+          hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play();
+          });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = videoUrl;
+          video.addEventListener('loadedmetadata', function () {
+            video.play();
+          });
+        } else {
+          playerContainer.innerHTML = "err HLS.";
+        }
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var videoUrl = "https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/65e69538fe98df00089b9ebb/original_360p.m3u8 ";
+        var playerContainer = document.getElementById("smartplayer-2");
+
+
+        var video = document.createElement("video");
+        video.style.width = "100%";
+        video.style.height = "100%";
+        video.controls = true;
+        playerContainer.appendChild(video);
+
+
+        if (Hls.isSupported()) {
+          var hls = new Hls();
+          hls.loadSource(videoUrl);
+          hls.attachMedia(video);
+          hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play();
+          });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = videoUrl;
+          video.addEventListener('loadedmetadata', function () {
+            video.play();
+          });
+        } else {
+          playerContainer.innerHTML = "err HLS.";
+        }
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var videoUrl = "https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/65e6950c7629f3000803e890/original_360p.m3u8 ";
+        var playerContainer = document.getElementById("smartplayer-3");
+
+        var video = document.createElement("video");
+        video.style.width = "100%";
+        video.style.height = "100%";
+        video.controls = true;
+        playerContainer.appendChild(video);
+
+
+        if (Hls.isSupported()) {
+          var hls = new Hls();
+          hls.loadSource(videoUrl);
+          hls.attachMedia(video);
+          hls.on(Hls.Events.MANIFEST_PARSED, function () {
+            video.play();
+          });
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = videoUrl;
+          video.addEventListener('loadedmetadata', function () {
+            video.play();
+          });
+        } else {
+          playerContainer.innerHTML = "err hls";
+        }
+      });
+    </script>
+
+
+</body>
+
+</html>
