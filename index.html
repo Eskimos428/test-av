@@ -39,7 +39,7 @@
       }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
       fbq('init', pixelId);
-      fbq('track', 'PageView'); 
+      fbq('track', 'PageView');
 
       // Добавляем обработчики для кнопок
       document.querySelectorAll('.button__redirect').forEach(function (button) {
@@ -163,9 +163,7 @@ overflow-x: hidden;
 
       <p style="color: white; font-weight: 900; font-size: 16px;">Acesso se encerrando! Aproveite</p>
 
-      <a href="https://api.whatsapp.com/send/?phone=6281214698631&text=হ্যালো!%20আমি%20ভিআইপি%20গ্রুপে%20প্রবেশাধিকার%20পেতে%20চাই%20।"
-        target="_blank" style="color: white; font-weight: 700; font-size: 15px;" id="whatsappLink"
-        class="button__redirect">
+      <a href="index.html" target="_blank" style="color: white; font-weight: 700; font-size: 15px;">
         Agora!
       </a>
 
@@ -173,7 +171,7 @@ overflow-x: hidden;
 
     </div>
     <div style="margin: 30px;">
-      <img style="width: 100px;" src="/img/logo-black-tipster.png" alt="logo">
+      <img style="width: 100px;" src="img/logo-black-tipster.png" alt="logo">
     </div>
   </header>
 
@@ -265,28 +263,33 @@ overflow-x: hidden;
         document.addEventListener('DOMContentLoaded', function () {
           const video = document.getElementById('myVideo');
           const ocultarBlock = document.querySelector('.ocultar');
-          const triggerTime = 5 * 60 + 25;
+          const triggerTime = 0 * 60 + 5;
           let classAdded = false;
 
           video.addEventListener('timeupdate', function () {
             if (!classAdded && video.currentTime >= triggerTime) {
               ocultarBlock.classList.add('active');
               classAdded = true;
+
+
+              ocultarBlock.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
             }
           });
 
           const videoplay = document.querySelector('.container-img');
           const smartAutoplayElement = document.querySelector('.smartplayer-autoplay-element-animated');
 
-
           videoplay.addEventListener('click', function () {
-
             smartAutoplayElement.style.display = 'none';
             video.muted = false;
             video.play();
           });
         });
       </script>
+
 
 
       <style>
@@ -431,15 +434,13 @@ overflow-x: hidden;
     </div>
 
     <script>
+      var video = document.getElementById('myVideo');
 
       if (Hls.isSupported()) {
-        var video = document.getElementById('myVideo');
+
         var hls = new Hls();
-
-
         hls.loadSource('https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/65e6951304efac000832b15d/original_360p.m3u8');
         hls.attachMedia(video);
-
 
         hls.on(Hls.Events.MANIFEST_PARSED, function (event, data) {
           console.log(data);
@@ -449,13 +450,13 @@ overflow-x: hidden;
           if (data.fatal) {
             switch (data.fatal) {
               case Hls.ErrorTypes.NETWORK_ERROR:
-                console.error('err');
+                console.error('Network error');
                 break;
               case Hls.ErrorTypes.MEDIA_ERROR:
-                console.error('err rec');
+                console.error('Media error');
                 break;
               case Hls.ErrorTypes.OTHER_ERROR:
-                console.error('err other');
+                console.error('Other error');
                 break;
               default:
                 break;
@@ -466,13 +467,10 @@ overflow-x: hidden;
 
         video.src = 'https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/65e6951304efac000832b15d/original_360p.m3u8';
       } else {
-        console.error('err hls');
-
-
-
-
+        console.error('HLS is not supported');
       }
     </script>
+
 
 
     <style>
