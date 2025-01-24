@@ -164,7 +164,7 @@ overflow-x: hidden;
       <p style="color: white; font-weight: 900; font-size: 16px;">Acesso se encerrando! Aproveite</p>
 
       <a href="index.html" target="_blank" style="color: white; font-weight: 700; font-size: 15px;">
-        Agora! test-1
+        Agora!test-3
       </a>
 
 
@@ -468,6 +468,9 @@ overflow-x: hidden;
         video.src = 'https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/65e6951304efac000832b15d/original_360p.m3u8';
         video.controls = false;
         playsInline = true;
+        video.playsInline = true;
+        video.muted = true;
+        video.preload = "auto"
       } else {
         console.error('HLS is not supported');
       }
@@ -712,6 +715,34 @@ overflow-x: hidden;
       }
     </style>
 
+    <style>
+      video {
+        background-color: transparent;
+        border-bottom: 1px solid transparent;
+      }
+      
+      video::-webkit-media-controls-panel {
+          display: none !important;
+          -webkit-appearance: none;
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        video::-webkit-media-controls-play-button {
+          display: none !important;
+          -webkit-appearance: none;
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        video::-webkit-media-controls-start-playback-button {
+          display: none !important;
+          -webkit-appearance: none;
+          opacity: 0;
+          visibility: hidden;
+        }
+   
+    </style>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var videoUrl = "https://cdn.converteai.net/8e72285f-5067-41e5-8863-12a0ab5df503/65e6952c0fa099000842361a/original_360p.m3u8";
@@ -722,7 +753,7 @@ overflow-x: hidden;
         video.preload = "auto";
         video.style.width = "100%";
         video.style.height = "100%";
-        video.controls = true;
+        video.controls = false;
         playerContainer.appendChild(video);
 
 
